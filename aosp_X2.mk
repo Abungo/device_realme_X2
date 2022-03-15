@@ -10,14 +10,14 @@ $(call inherit-product, device/realme/X2/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common Spark stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_BLUR := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := spark_X2
+PRODUCT_NAME := aosp_X2
 PRODUCT_DEVICE := X2
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme X2
